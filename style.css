@@ -1,0 +1,170 @@
+body {
+    background-color: #f2eae2;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 450px;
+    margin: 175px auto 175px auto;
+    position: relative;
+    width: 600px;
+}
+
+.img-desktop {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: relative;
+    height: 450px;
+    width: 300px;
+}
+
+.img-mobile{
+    display: none;
+}
+
+.text-container {
+    display: inline-block;
+    margin: 10px 32px 10px 32px;
+    position: absolute;
+}
+
+#overline {
+    color: #6c7289;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 15px;
+}
+
+#title {
+    color: #1c232b;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-right: 32px;
+}
+
+#description {
+    color: #6c7289;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 10px;
+    margin-right: 31px;
+}
+
+#price {
+    color: #3d8168;
+    display: inline-block;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+#discount {
+    color: #6c7289;
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    padding-left: 9px;
+    padding-right: 70px;
+    padding-top: 0;
+    position: relative;
+    text-decoration: line-through;
+    width: 20px;
+}
+
+.cta-button {
+    background-color: #3d8168;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 48px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    width: 236px;
+}
+
+#icon-cart {
+    height: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 16px;
+}
+
+.cta-button:hover {
+    background-color: #1a4032;
+}
+
+/* For mobile devices with screens with a max-width of 375 px) */
+
+@media (max-width: 1200px) {
+    .container {
+        height: 611px;
+        width: 343px;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 240px;
+        position: absolute;
+        width: 343px;
+    }
+
+    .text-container {
+        display: block;
+        margin: 10px 10px 20px 17px;
+        position: absolute;
+    }
+
+    #overline {
+        margin-top: 246px;
+    }
+
+    #title {
+        margin-bottom: 5px;
+    }
+
+    #description {
+        margin-bottom: 10px;
+    }
+
+    #discount {
+        display: inline-block;
+        padding-right: 160px;
+    }
+
+    .cta-button {
+        display: block;
+        height: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 295px;
+    }
+
+    #icon-cart {
+        display: block;
+        padding-left: 75px;
+        padding-right: 5px;
+        padding-top: 0px;
+        position: absolute;
+    }
+}
